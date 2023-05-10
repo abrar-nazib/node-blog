@@ -1,0 +1,32 @@
+<%- include('../../partials/head.ejs') %>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-2">
+
+
+            </div>
+            <div class="col-md-10">
+                <div class="mx-5">
+                    <!-- mx-5 means margin at the x axis -->
+                    <form action="/posts/create" method="POST" enctype="multipart/form-data">
+                        <div class="form-group">
+                            <label for="title">
+                                Enter Your Post Title
+                            </label>
+                            <input type="text" class="form-control" id="title" name="title" placeholder="Enter Title"
+                                required />
+                                
+                        </div>
+
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- closing tags must -->
+    </body>
+
+    </html>
